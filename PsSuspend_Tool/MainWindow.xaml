@@ -5,12 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PsSuspend_Tool"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="PsSuspend_GUI" Height="600" Width="450">
+    <Window.Resources>
+        
+    </Window.Resources>
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
 
+        <StackPanel HorizontalAlignment="Left" >
+            <StackPanel x:Name="MainPanal"  VerticalAlignment="Top" HorizontalAlignment="Left"  >
+                <TextBlock Style="{StaticResource HintText}" Text="PID              Name" Width="200" HorizontalAlignment="Left"/>
+                
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal"  HorizontalAlignment="Left" VerticalAlignment="Bottom"  >
+                <Button x:Name="Add" Style="{StaticResource Button}" >+</Button>
+                <Button x:Name="Remove" Style="{StaticResource Button}" >-</Button>
+            </StackPanel>
+        </StackPanel>
     </Grid>
+
 </Window>
